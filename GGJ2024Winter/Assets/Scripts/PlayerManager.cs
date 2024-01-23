@@ -1,10 +1,15 @@
+using System;
 using UnityEngine;
 
-public class PlayerManager : PersistentSingleton<PlayerManager>
+public class PlayerManager : MonoBehaviour
 {
-    [SerializeField] public bool isWin { get; private set; }
-    public void SetIsWin(bool b)
+    public static PlayerManager instance { get; private set;}//单例模式调用
+    [SerializeField] public bool isWin;
+
+    private void Awake()
     {
-        isWin = b;
+        instance = this;
     }
+
+    public void SetIsWin(bool b) {isWin = b; }
 }
