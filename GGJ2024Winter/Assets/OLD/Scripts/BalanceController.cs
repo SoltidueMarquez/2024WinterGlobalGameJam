@@ -8,22 +8,19 @@ public class BalanceController : MonoBehaviour
     {
         public Rigidbody2D rigidbody2D;
         public float force;
-        public Vector2 direction = Vector2.up; // 默认方向为向上
-        public Vector2 point; // 力的作用点，相对于刚体的局部坐标
-        public bool useGlobalDirection = true; // 是否使用全局方向
+        public Vector2 direction = Vector2.up; 
+        public Vector2 point;
+        public bool useGlobalDirection = true;
     }
 
-    public Transform head; // 火柴人头部的Transform
-    public float rayLength = 1f; // 射线检测的长度
-    public LayerMask groundLayer; // 地面层
-    public List<Rigidbody2DForce> allRigidBodiesForces = new List<Rigidbody2DForce>(); // 所有关节及其力的列表
+    public Transform head; 
+    public float rayLength = 1f;
+    public LayerMask groundLayer; 
+    public List<Rigidbody2DForce> allRigidBodiesForces = new List<Rigidbody2DForce>(); 
 
     private void Update()
     {
-        // 从头部中心向下发射射线
         RaycastHit2D hit = Physics2D.Raycast(head.position, Vector2.down, rayLength, groundLayer);
-
-        // 如果射线检测到地面
         if (hit.collider != null)
         {
             // 遍历所有关节
