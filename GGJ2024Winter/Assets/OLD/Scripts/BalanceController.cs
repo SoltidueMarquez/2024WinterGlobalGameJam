@@ -1,5 +1,5 @@
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class BalanceController : MonoBehaviour
 {
@@ -8,15 +8,15 @@ public class BalanceController : MonoBehaviour
     {
         public Rigidbody2D rigidbody2D;
         public float force;
-        public Vector2 direction = Vector2.up; 
+        public Vector2 direction = Vector2.up;
         public Vector2 point;
         public bool useGlobalDirection = true;
     }
 
-    public Transform head; 
+    public Transform head;
     public float rayLength = 1f;
-    public LayerMask groundLayer; 
-    public List<Rigidbody2DForce> allRigidBodiesForces = new List<Rigidbody2DForce>(); 
+    public LayerMask groundLayer;
+    public List<Rigidbody2DForce> allRigidBodiesForces = new List<Rigidbody2DForce>();
 
     private void Update()
     {

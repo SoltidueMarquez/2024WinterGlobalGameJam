@@ -20,8 +20,8 @@ public class x_PunchForce : MonoBehaviour
     public float m_StemEmptyTimer;//踩空时间
 
     private Collider2D _collider;
-    
-    
+
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.root == base.transform.root) //如果是自己碰自己，返回
