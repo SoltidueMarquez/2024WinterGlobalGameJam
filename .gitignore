@@ -1,4 +1,8 @@
-Library
-Logs
-UserSettings
-obj
+Library/
+.vs/
+Temp/
+Logs/
+obj/
+UserSettings/
+
+

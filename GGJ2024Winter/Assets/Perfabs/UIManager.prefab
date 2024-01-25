@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3934717526239847405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3587632063636319793}
+  - component: {fileID: 8090399697398141574}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3587632063636319793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3934717526239847405}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 767.60175, y: 629.7043, z: 1.2687546}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8090399697398141574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3934717526239847405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247cf5f75dc58f849ae371b3ac94c6f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settingMenu: {fileID: 0}
+  sceneName: test 2
+  continueButton: {fileID: 0}
+  restartButton: {fileID: 0}
+  quitButton: {fileID: 0}
+  levels:
+  - obstacleNum: 10
+    evaluation: "\u8C01\u662F\u4E3B\u4EBA\u7684\u4E56\u72D7\u72D7\uFF0C\u8C01\u662F\u6700\u68D2\u7684\u4E56\u72D7\u72D7\uFF01"
+    evaluateSprite: {fileID: 21300000, guid: ce5ea892350359e41bda1eaa52d14d84, type: 3}
+  - obstacleNum: 15
+    evaluation: "\u7B49\u7740\u6328\u63CD\u5427"
+    evaluateSprite: {fileID: 21300000, guid: ec6e6a35bef35a446847ac004a0f641a, type: 3}
+  - obstacleNum: 20
+    evaluation: "\u5E0C\u671B\u4EBA\u6CA1\u4E8B"
+    evaluateSprite: {fileID: 21300000, guid: 82991a5afc6a0f84fa1bc36613850574, type: 3}
+  - obstacleNum: 30
+    evaluation: "\u7EF3\u5B50\u90A3\u5934\u53EA\u662F\u88C5\u9970\u54C1\u7F62\u4E86\uFF0C\u4E0A\u8FB9\u7684\u5927\u4EBA\u7269\u662F\u4E0D\u4F1A\u61C2\u7684\u3002"
+    evaluateSprite: {fileID: 21300000, guid: 52c4fd39a22e7844d850e9487b15cef9, type: 3}
+  - obstacleNum: 40
+    evaluation: "\u827A    \u672F    \u5BB6"
+    evaluateSprite: {fileID: 21300000, guid: 04255c2b695d7dd42a6321179154b122, type: 3}
+  endMenu: {fileID: 0}
+  evaluateImage: {fileID: 0}
+  evaluateText: {fileID: 0}
+  resultText: {fileID: 0}
+  bonesText: {fileID: 0}
+  restartText: {fileID: 0}
+  restartButton2: {fileID: 0}
